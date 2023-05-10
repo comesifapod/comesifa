@@ -93,6 +93,9 @@ a {
     justify-content: center;
 }
 
+video{
+  pointer-events: none;
+}
 
 .site-section {
   padding: 2.5em 0; }
@@ -910,37 +913,66 @@ a {
   border-radius: 50%; }
 
 #player2{
-  background-color: #0000005e;
-}  
+  background-color: #ffffff93;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;}  
 
-.player {
-  position: relative; }
-  .player img {
-    max-width: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px; }
-  .player .team-number {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: #f23a2e;
-    border-radius: 50%;
-    color: #fff; }
-    .player .team-number > span {
-      position: absolute;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50%; }
-  .player h2 {
-    font-size: 20px;
-    letter-spacing: .2em;
-    text-transform: uppercase; }
-  .player .position {
-    font-size: 14px;
-    color: #b3b3b3;
-    text-transform: uppercase; }
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;}
+    
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);}
+    
+.video-background-content {
+  position: relative;
+  z-index: 2;}
+    
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.425);
+  z-index: 1;}
+
+  .ParallaxVideo{ 
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+    min-width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}  
+    
 
 .site-block-27 ul, .site-block-27 ul li {
   padding: 0;
