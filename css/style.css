@@ -93,6 +93,8 @@ a {
     justify-content: center;
 }
 
+
+
 video{
   pointer-events: none;
 }
@@ -576,13 +578,39 @@ video{
     background-position: center center;
     background-repeat: no-repeat;
     height: 300px; }
+
+    .contact {
+      list-style-type: none;
+      overflow: hidden;
+      text-align: center;
+    }
+    
+   .contact li {
+      float: left;
+    }
+    
+    .contact li a {
+      display: block;
+      color: rgb(0, 0, 0);
+     
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    .contact li a:hover {
+      background-color: #ff293a;
+    }
+    
+
     @media (min-width: 768px) {
       .podcast-entry .image {
         width: 300px;
         height: auto; } }
   .podcast-entry .text {
     width: 100%;
-    padding: 40px; }
+    padding: 30px; 
+    margin-top: -70px;}
+
     @media (min-width: 768px) {
       .podcast-entry .text {
         width: calc(100% - 300px); } }
@@ -953,26 +981,6 @@ video{
   width: 100%;
   background-color: rgba(0, 0, 0, 0.425);
   z-index: 1;}
-
-  .ParallaxVideo{ 
-    height: 300px;
-    padding-bottom: 50px;
-    padding-top: 50px; 
-}
-.ParallaxVideo video{ 
-    min-width: 100%;
-    position: fixed;
-    top:0;
-    z-index: -999;
-}
-.ParallaxVideo h1 {
-  color: #fff;
-  font-size: 76px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}  
-    
 
 .site-block-27 ul, .site-block-27 ul li {
   padding: 0;
