@@ -16,7 +16,6 @@
    
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
 
     <link rel="stylesheet" href="css/aos.css">
@@ -55,18 +54,18 @@
                   <li class="has-children">
                       <a href="#0" title="">Podcast</a>
                       <ul class="sub-menu">
-                          <li><a href="stagione1.html">Stagione 1</a></li>
+                          <li><a href="stagione-1.html">Stagione 1</a></li>
                       </ul>
                   </li>
                   <li class="has-children">
                       <a href="#0" title="">Shopping</a>
                       <ul class="sub-menu">
-                          <li><a href="single-video.html">Hardware</a></li>
-                        <li><a href="single-audio.html">Smartphone</a></li>
-                        <li><a href="single-standard.html">Varie</a></li>
+                          <li><a href="">Hardware</a></li>
+                        <li><a href="">Smartphone</a></li>
+                        <li><a href="">Varie</a></li>
                       </ul>
                   </li>
-                  <li><a href="styles.html" title="">Supportaci</a></li>
+                  <li><a href="" title="">Supportaci</a></li>
                   <li><a href="about.html" title="">Chi siamo</a></li>
                   <li><a href="contact.html" title="">Contattaci</a></li>
 
@@ -134,8 +133,7 @@
             <div class="image w-100" style="height: 300px; background-image: url('images/img_2.jpg');"></div>
             <div class="text w-100">
 
-              <h3 class="font-weight-light"><a href="single-post.html">Episode 07: How To Create Web Page Using Bootstrap 4</a></h3>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt.</p>
+              <h4 class="font-weight-light text-center"><a href="single-post.html">Episodio 01:</br> La prima volta</a></h4>
 
 
               <div class="player">
@@ -152,8 +150,7 @@
             <div class="image w-100" style="height: 300px; background-image: url('images/main.jpg');"></div>
             <div class="text w-100">
 
-              <h3 class="font-weight-light"><a href="single-post.html">Episode 07: How To Create Web Page Using Bootstrap 4</a></h3>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt.</p>
+              <h4 class="font-weight-light text-center"><a href="single-post.html">Episodio 02:</br> La chiave è il nome</a></h4>
 
 
               <div class="player">
@@ -196,8 +193,8 @@
 
                   <ul>
                       <li><a href="https://www.instagram.com/comesifapod/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                      <li><a href="#0"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
-                      <li><a href="#0"><i class="fa-brands fa-mastodon"></i> Mastodon</a></li>
+                      <li><a href="https://t.me/comesifa_podcast"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
+                      <li><a href="https://mastodon.uno/@comesifa"><i class="fa-brands fa-mastodon"></i> Mastodon</a></li>
                       <li><a href="mailto:podcomesifa@proton.me"><i class="fa-solid fa-envelope"></i> Email</a></li>
                   </ul>
 
@@ -255,7 +252,7 @@
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-migrate-3.4.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -267,26 +264,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main2.js"></script>
 
-  <script src="js/mediaelement-and-player.min.js"></script>
-
-  <script>
-      document.addEventListener('DOMContentLoaded', function() {
-                var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
-
-                for (var i = 0; i < total; i++) {
-                    new MediaElementPlayer(mediaElements[i], {
-                        pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
-                        shimScriptAccess: 'always',
-                        success: function () {
-                            var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
-                            for (var j = 0; j < targetTotal; j++) {
-                                target[j].style.visibility = 'visible';
-                            }
-                  }
-                });
-                }
-            });
-    </script>
+ 
 
 
   <script src="js/main.js"></script>
