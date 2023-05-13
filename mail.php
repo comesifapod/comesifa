@@ -25,7 +25,7 @@ if ($message === ''){
   die();
 }
 $content="From: $name \nEmail: $email \nMessage: $message";
-$recipient = "youremail@here.com";
+$recipient = "podcomesifa@proton.me";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
 echo "Email sent!";
